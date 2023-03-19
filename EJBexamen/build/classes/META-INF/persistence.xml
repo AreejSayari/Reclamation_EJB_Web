@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+	<persistence-unit name="EJBexamen" transaction-type="JTA">
+	<jta-data-source>java:/DSapplication</jta-data-source>
+		<class>com.enit.entities.Utilisateur</class>
+		<class>com.enit.entities.Administrateur</class>
+		<class>com.enit.entities.Etudiant</class>
+		<class>com.enit.entities.Reclamation</class>
+		<class>com.enit.entities.TypeReclamation</class>
+	</persistence-unit>
+</persistence>
